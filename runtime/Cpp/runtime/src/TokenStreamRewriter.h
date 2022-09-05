@@ -86,6 +86,7 @@ namespace antlr4 {
    * first example shows.</p>
    */
   class ANTLR4CPP_PUBLIC TokenStreamRewriter {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     static const std::string DEFAULT_PROGRAM_NAME;
     static constexpr size_t PROGRAM_INIT_SIZE = 100;

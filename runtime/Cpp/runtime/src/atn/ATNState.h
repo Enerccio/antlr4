@@ -82,6 +82,7 @@ namespace atn {
 #endif
 
   class ANTLR4CPP_PUBLIC ATNState {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     static constexpr size_t INITIAL_NUM_TRANSITIONS = 4;
     static constexpr size_t INVALID_STATE_NUMBER = std::numeric_limits<size_t>::max();

@@ -10,6 +10,8 @@
 
 using namespace antlr4::atn;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ParseInfo);
+
 ParseInfo::ParseInfo(ProfilingATNSimulator *atnSimulator) : _atnSimulator(atnSimulator) {
 }
 

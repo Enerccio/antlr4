@@ -12,6 +12,7 @@ namespace dfa {
 
   /// A DFA walker that knows how to dump them to serialized strings.
   class ANTLR4CPP_PUBLIC DFASerializer {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     DFASerializer(const DFA *dfa, const Vocabulary &vocabulary);
 

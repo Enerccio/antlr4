@@ -17,6 +17,8 @@ using namespace antlr4::tree::pattern;
 
 using namespace antlrcpp;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ParseTreePattern)
+
 ParseTreePattern::ParseTreePattern(ParseTreePatternMatcher *matcher, const std::string &pattern, int patternRuleIndex_,
                                    ParseTree *patternTree)
   : patternRuleIndex(patternRuleIndex_), _pattern(pattern), _patternTree(patternTree), _matcher(matcher) {

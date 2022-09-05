@@ -22,6 +22,7 @@ namespace atn {
   ///  an ATN state.
   /// </summary>
   class ANTLR4CPP_PUBLIC ATNConfig {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     struct Hasher
     {

@@ -29,6 +29,7 @@ namespace atn {
   /// @since 4.3
   /// </summary>
   class ANTLR4CPP_PUBLIC DecisionInfo {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     /// <summary>
     /// The decision number, which is an index into <seealso cref="ATN#decisionToState"/>.

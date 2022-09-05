@@ -14,6 +14,7 @@ namespace tree {
 namespace xpath {
 
   class ANTLR4CPP_PUBLIC XPathElement {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     /// Construct element like {@code /ID} or {@code ID} or {@code /*} etc...
     ///  op is null if just node

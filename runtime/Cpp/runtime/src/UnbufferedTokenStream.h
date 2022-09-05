@@ -10,6 +10,7 @@
 namespace antlr4 {
 
   class ANTLR4CPP_PUBLIC UnbufferedTokenStream : public TokenStream {
+      ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     UnbufferedTokenStream(TokenSource *tokenSource);
     UnbufferedTokenStream(TokenSource *tokenSource, int bufferSize);

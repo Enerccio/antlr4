@@ -27,6 +27,8 @@
 
 using namespace antlr4::atn;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(PredictionContextCache);
+
 void PredictionContextCache::put(const Ref<const PredictionContext> &value) {
   assert(value);
 

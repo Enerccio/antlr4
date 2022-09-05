@@ -69,6 +69,7 @@ namespace pattern {
   /// {@code \<} and {@code \>}.
   /// </summary>
   class ANTLR4CPP_PUBLIC ParseTreePatternMatcher {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     class CannotInvokeStartRule : public RuntimeException {
     public:

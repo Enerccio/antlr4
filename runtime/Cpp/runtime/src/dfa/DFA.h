@@ -11,6 +11,7 @@ namespace antlr4 {
 namespace dfa {
 
   class ANTLR4CPP_PUBLIC DFA final {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   private:
     struct DFAStateHasher final {
       size_t operator()(const DFAState *dfaState) const {

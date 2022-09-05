@@ -26,6 +26,7 @@ namespace antlr4 {
   /// </ul>
   /// </summary>
   class ANTLR4CPP_PUBLIC IntStream {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     static constexpr size_t EOF = std::numeric_limits<size_t>::max();
 

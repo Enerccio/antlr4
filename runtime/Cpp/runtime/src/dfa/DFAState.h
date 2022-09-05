@@ -39,8 +39,10 @@ namespace dfa {
   ///  meaning that state was reached via a different set of rule invocations.
   /// </summary>
   class ANTLR4CPP_PUBLIC DFAState final {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     struct ANTLR4CPP_PUBLIC PredPrediction final {
+      ANTLR4CPP_ALLOCATION_DECLARATION
     public:
       Ref<const atn::SemanticContext> pred; // never null; at least SemanticContext.NONE
       int alt;

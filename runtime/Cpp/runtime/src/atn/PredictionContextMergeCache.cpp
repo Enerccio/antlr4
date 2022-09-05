@@ -30,6 +30,8 @@
 using namespace antlr4::atn;
 using namespace antlr4::misc;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(PredictionContextMergeCache);
+
 PredictionContextMergeCache::PredictionContextMergeCache(
     const PredictionContextMergeCacheOptions &options) : _options(options) {}
 

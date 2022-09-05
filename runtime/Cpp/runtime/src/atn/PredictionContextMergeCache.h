@@ -35,6 +35,7 @@ namespace antlr4 {
 namespace atn {
 
   class ANTLR4CPP_PUBLIC PredictionContextMergeCache final {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     PredictionContextMergeCache()
         : PredictionContextMergeCache(PredictionContextMergeCacheOptions()) {}

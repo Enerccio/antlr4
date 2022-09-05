@@ -12,6 +12,8 @@ using namespace antlr4;
 using namespace antlr4::atn;
 using namespace antlrcpp;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(Transition);
+
 Transition::Transition(TransitionType transitionType, ATNState *target) : _transitionType(transitionType) {
   if (target == nullptr) {
     throw NullPointerException("target cannot be null.");

@@ -24,6 +24,7 @@ namespace misc {
    * (inclusive).</p>
    */
   class ANTLR4CPP_PUBLIC IntervalSet final {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     static IntervalSet const COMPLETE_CHAR_SET;
     static IntervalSet const EMPTY_SET;

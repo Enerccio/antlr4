@@ -14,6 +14,8 @@ std::string RuntimeMetaData::getRuntimeVersion() {
   return VERSION;
 }
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(RuntimeMetaData)
+
 void RuntimeMetaData::checkVersion(const std::string &generatingToolVersion, const std::string &compileTimeVersion) {
   std::string runtimeVersion = VERSION;
   bool runtimeConflictsWithGeneratingTool = false;

@@ -13,6 +13,8 @@
 using namespace antlr4::atn;
 using namespace antlrcpp;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ATNState);
+
 size_t ATNState::hashCode() const {
   return stateNumber;
 }

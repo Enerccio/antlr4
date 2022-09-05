@@ -19,6 +19,7 @@ namespace atn {
   ///  I have scoped the AND, OR, and Predicate subclasses of
   ///  SemanticContext within the scope of this outer class.
   class ANTLR4CPP_PUBLIC SemanticContext : public std::enable_shared_from_this<SemanticContext> {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     virtual ~SemanticContext() = default;
 

@@ -28,6 +28,8 @@ namespace {
 
 }
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(LexerActionExecutor);
+
 LexerActionExecutor::LexerActionExecutor(std::vector<Ref<const LexerAction>> lexerActions)
     : _lexerActions(std::move(lexerActions)), _hashCode(0) {}
 

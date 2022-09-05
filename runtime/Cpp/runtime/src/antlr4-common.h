@@ -89,6 +89,14 @@
 #define ANTLR4CPP_USING_ABSEIL 0
 #endif
 
+#ifndef ANTLR4CPP_CUSTOM_ALLOCATION
+#define ANTLR4CPP_ALLOCATION_DECLARATION
+#define ANTLR4CPP_ALLOCATION_DECLARATION_STRUCT
+#define ANTLR4CPP_ALLOCATION_IMPLEMENTATION(type)
+#else
+#include "internal/Allocation.h"
+#endif
+
 #include "support/Declarations.h"
 
 // We have to undefine this symbol as ANTLR will use this name for own members and even

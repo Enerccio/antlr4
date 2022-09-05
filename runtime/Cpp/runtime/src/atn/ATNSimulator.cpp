@@ -14,6 +14,8 @@ using namespace antlr4;
 using namespace antlr4::dfa;
 using namespace antlr4::atn;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ATNSimulator);
+
 const Ref<DFAState> ATNSimulator::ERROR = std::make_shared<DFAState>(std::numeric_limits<int>::max());
 
 ATNSimulator::ATNSimulator(const ATN &atn, PredictionContextCache &sharedContextCache)

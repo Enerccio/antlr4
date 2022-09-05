@@ -35,6 +35,7 @@ namespace {
   };
 
   class LL1AnalyzerImpl final {
+      ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     LL1AnalyzerImpl(const ATN& atn, misc::IntervalSet& look, bool seeThruPreds, bool addEOF) : _atn(atn), _look(look), _seeThruPreds(seeThruPreds), _addEOF(addEOF) {}
 
@@ -155,6 +156,8 @@ namespace {
   };
 
 }
+
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(LL1AnalyzerImpl);
 
 std::vector<misc::IntervalSet> LL1Analyzer::getDecisionLookahead(ATNState *s) const {
   std::vector<misc::IntervalSet> look;

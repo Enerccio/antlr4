@@ -30,6 +30,8 @@ using namespace antlr4::tree;
 using namespace antlr4::tree::pattern;
 using namespace antlrcpp;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ParseTreePatternMatcher)
+
 ParseTreePatternMatcher::CannotInvokeStartRule::CannotInvokeStartRule(const RuntimeException &e) : RuntimeException(e.what()) {
 }
 

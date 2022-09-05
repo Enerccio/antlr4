@@ -10,6 +10,8 @@
 
 using namespace antlr4::atn;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(DecisionInfo);
+
 DecisionInfo::DecisionInfo(size_t decision) : decision(decision) {
 }
 

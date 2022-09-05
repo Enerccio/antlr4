@@ -19,6 +19,8 @@ namespace {
 
 }
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ATNConfigSet);
+
 ATNConfigSet::ATNConfigSet() : ATNConfigSet(true) {}
 
 ATNConfigSet::ATNConfigSet(const ATNConfigSet &other)

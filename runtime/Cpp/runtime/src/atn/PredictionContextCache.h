@@ -32,6 +32,7 @@ namespace antlr4 {
 namespace atn {
 
   class ANTLR4CPP_PUBLIC PredictionContextCache final {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     PredictionContextCache() = default;
 

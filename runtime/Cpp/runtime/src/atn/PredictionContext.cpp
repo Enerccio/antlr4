@@ -128,6 +128,8 @@ const Ref<const PredictionContext> PredictionContext::EMPTY = std::make_shared<S
 
 //----------------- PredictionContext ----------------------------------------------------------------------------------
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(PredictionContext);
+
 PredictionContext::PredictionContext(PredictionContextType contextType) : _contextType(contextType), _hashCode(0) {}
 
 PredictionContext::PredictionContext(PredictionContext&& other) : _contextType(other._contextType), _hashCode(other._hashCode.exchange(0, std::memory_order_relaxed)) {}

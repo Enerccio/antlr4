@@ -14,6 +14,8 @@ using namespace antlr4;
 
 using antlr4::misc::Interval;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(TokenStreamRewriter)
+
 TokenStreamRewriter::RewriteOperation::RewriteOperation(TokenStreamRewriter *outerInstance_, size_t index_)
   : outerInstance(outerInstance_) {
 

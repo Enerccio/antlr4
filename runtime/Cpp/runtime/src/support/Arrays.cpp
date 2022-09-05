@@ -10,6 +10,8 @@
 
 using namespace antlrcpp;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(Arrays)
+
 std::string Arrays::listToString(const std::vector<std::string> &list, const std::string &separator)
 {
   std::stringstream ss;

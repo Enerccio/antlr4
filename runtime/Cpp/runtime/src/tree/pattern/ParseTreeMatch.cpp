@@ -10,6 +10,8 @@
 using namespace antlr4::tree;
 using namespace antlr4::tree::pattern;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ParseTreeMatch)
+
 ParseTreeMatch::ParseTreeMatch(ParseTree *tree, const ParseTreePattern &pattern,
                                const std::map<std::string, std::vector<ParseTree *>> &labels,
                                ParseTree *mismatchedNode)

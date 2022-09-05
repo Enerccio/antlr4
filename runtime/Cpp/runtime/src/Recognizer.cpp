@@ -23,6 +23,8 @@ using namespace antlr4::internal;
 std::map<const dfa::Vocabulary*, std::map<std::string_view, size_t>> Recognizer::_tokenTypeMapCache;
 std::map<std::vector<std::string>, std::map<std::string, size_t>> Recognizer::_ruleIndexMapCache;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(Recognizer)
+
 Recognizer::Recognizer() {
   InitializeInstanceFields();
   _proxListener.addErrorListener(&ConsoleErrorListener::INSTANCE);

@@ -10,6 +10,8 @@
 using namespace antlr4::tree;
 using namespace antlr4::tree::xpath;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(XPathElement)
+
 XPathElement::XPathElement(const std::string &nodeName) {
   _nodeName = nodeName;
 }

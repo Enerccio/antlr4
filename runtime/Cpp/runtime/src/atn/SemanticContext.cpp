@@ -416,3 +416,5 @@ Ref<const SemanticContext> SemanticContext::Or(Ref<const SemanticContext> a, Ref
 
   return result;
 }
+
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(SemanticContext);

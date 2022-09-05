@@ -20,6 +20,7 @@ namespace atn {
   /// @since 4.2
   /// </summary>
   class ANTLR4CPP_PUBLIC LexerAction {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     virtual ~LexerAction() = default;
 

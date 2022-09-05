@@ -18,6 +18,8 @@ IntervalSet const IntervalSet::COMPLETE_CHAR_SET =
 
 IntervalSet const IntervalSet::EMPTY_SET;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(IntervalSet);
+
 IntervalSet::IntervalSet() : _intervals() {
 }
 

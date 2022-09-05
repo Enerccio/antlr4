@@ -21,6 +21,8 @@ using namespace antlr4::atn;
 using namespace antlr4::internal;
 using namespace antlrcpp;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ATN);
+
 ATN::ATN() : ATN(ATNType::LEXER, 0) {}
 
 ATN::ATN(ATNType grammarType_, size_t maxTokenType_) : grammarType(grammarType_), maxTokenType(maxTokenType_) {}

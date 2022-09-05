@@ -152,6 +152,10 @@ else()
     message(FATAL_ERROR "Your C++ compiler does not support C++17.")
 endif()
 
+if (WITH_CUSTOM_ALLOCATION)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DANTLR4CPP_CUSTOM_ALLOCATION")
+endif()
+
 
 add_subdirectory(runtime)
 if(WITH_DEMO)

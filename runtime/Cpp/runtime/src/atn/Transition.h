@@ -25,6 +25,7 @@ namespace atn {
   ///  ATN transitions.
   /// </summary>
   class ANTLR4CPP_PUBLIC Transition {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     /// The target of this transition.
     // ml: this is a reference into the ATN.

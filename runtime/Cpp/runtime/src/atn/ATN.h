@@ -21,6 +21,7 @@ namespace atn {
   class ParserATNSimulator;
 
   class ANTLR4CPP_PUBLIC ATN {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     static constexpr size_t INVALID_ALT_NUMBER = 0;
 

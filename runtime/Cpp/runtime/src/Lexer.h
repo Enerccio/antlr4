@@ -17,6 +17,7 @@ namespace antlr4 {
   /// uses simplified match() and error recovery mechanisms in the interest
   /// of speed.
   class ANTLR4CPP_PUBLIC Lexer : public Recognizer, public TokenSource {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     static constexpr size_t DEFAULT_MODE = 0;
     static constexpr size_t MORE = std::numeric_limits<size_t>::max() - 1;

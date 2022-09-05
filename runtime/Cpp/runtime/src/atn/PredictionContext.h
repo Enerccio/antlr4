@@ -25,6 +25,7 @@ namespace atn {
   class PredictionContextMergeCache;
 
   class ANTLR4CPP_PUBLIC PredictionContext {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     /// Represents $ in local context prediction, which means wildcard.
     /// *+x = *.

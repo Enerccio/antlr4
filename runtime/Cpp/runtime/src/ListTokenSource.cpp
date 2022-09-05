@@ -11,6 +11,8 @@
 
 using namespace antlr4;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ListTokenSource)
+
 ListTokenSource::ListTokenSource(std::vector<std::unique_ptr<Token>> tokens_) : ListTokenSource(std::move(tokens_), "") {
 }
 

@@ -16,6 +16,8 @@ using namespace antlr4;
 using namespace antlr4::dfa;
 using namespace antlrcpp;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(DFA);
+
 DFA::DFA(atn::DecisionState *atnStartState) : DFA(atnStartState, 0) {
 }
 

@@ -9,6 +9,8 @@
 
 using namespace antlr4;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(CommonTokenStream)
+
 CommonTokenStream::CommonTokenStream(TokenSource *tokenSource) : CommonTokenStream(tokenSource, Token::DEFAULT_CHANNEL) {
 }
 

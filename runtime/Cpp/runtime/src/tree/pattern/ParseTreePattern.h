@@ -16,6 +16,7 @@ namespace pattern {
   /// <seealso cref="ParseTreePatternMatcher#compile(String, int)"/>.
   /// </summary>
   class ANTLR4CPP_PUBLIC ParseTreePattern {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     /// <summary>
     /// Construct a new instance of the <seealso cref="ParseTreePattern"/> class.

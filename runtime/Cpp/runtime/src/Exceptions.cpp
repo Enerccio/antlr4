@@ -7,6 +7,8 @@
 
 using namespace antlr4;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(RuntimeException)
+
 RuntimeException::RuntimeException(const std::string &msg) : std::exception(), _message(msg) {
 }
 
@@ -15,6 +17,8 @@ const char* RuntimeException::what() const noexcept {
 }
 
 //------------------ IOException ---------------------------------------------------------------------------------------
+
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(IOException)
 
 IOException::IOException(const std::string &msg) : std::exception(), _message(msg) {
 }

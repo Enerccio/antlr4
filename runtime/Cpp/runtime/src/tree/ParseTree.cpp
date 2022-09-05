@@ -7,6 +7,8 @@
 
 using namespace antlr4::tree;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ParseTree)
+
 bool ParseTree::operator == (const ParseTree &other) const {
   return &other == this;
 }

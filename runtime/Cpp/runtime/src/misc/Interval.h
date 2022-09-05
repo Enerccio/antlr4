@@ -18,6 +18,7 @@ namespace misc {
 
   /// An immutable inclusive interval a..b
   class ANTLR4CPP_PUBLIC Interval final {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     static const Interval INVALID;
 

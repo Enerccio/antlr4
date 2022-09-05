@@ -22,6 +22,8 @@ inline constexpr size_t SUPPRESS_PRECEDENCE_FILTER = 0x40000000;
 
 }
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ATNConfig);
+
 ATNConfig::ATNConfig(ATNState *state, size_t alt, Ref<const PredictionContext> context)
     : ATNConfig(state, alt, std::move(context), 0, SemanticContext::Empty::Instance) {}
 

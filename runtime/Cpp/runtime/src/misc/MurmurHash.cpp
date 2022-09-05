@@ -50,6 +50,8 @@ constexpr uint64_t ROTL64(uint64_t x, int r) {
 
 #if SIZE_MAX == UINT64_MAX
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(MurmurHash);
+
 size_t MurmurHash::update(size_t hash, size_t value) {
   size_t k1 = value;
   k1 *= UINT64_C(0x87c37b91114253d5);

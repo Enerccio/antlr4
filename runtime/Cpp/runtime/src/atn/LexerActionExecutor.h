@@ -18,6 +18,7 @@ namespace atn {
   /// efficiently, ensuring that actions appearing only at the end of the rule do
   /// not cause bloating of the <seealso cref="DFA"/> created for the lexer.</para>
   class ANTLR4CPP_PUBLIC LexerActionExecutor final : public std::enable_shared_from_this<LexerActionExecutor> {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     /// <summary>
     /// Constructs an executor for a sequence of <seealso cref="LexerAction"/> actions. </summary>

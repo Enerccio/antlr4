@@ -19,6 +19,8 @@
 using namespace antlrcpp;
 using namespace antlr4;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(Lexer)
+
 Lexer::Lexer() : Recognizer() {
   InitializeInstanceFields();
   _input = nullptr;

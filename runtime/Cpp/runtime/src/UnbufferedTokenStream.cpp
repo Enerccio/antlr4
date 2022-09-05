@@ -16,6 +16,8 @@
 
 using namespace antlr4;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(UnbufferedTokenStream)
+
 UnbufferedTokenStream::UnbufferedTokenStream(TokenSource *tokenSource) : UnbufferedTokenStream(tokenSource, 256) {
 }
 

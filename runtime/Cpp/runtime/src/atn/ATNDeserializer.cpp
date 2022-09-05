@@ -250,6 +250,8 @@ namespace {
 
 }
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ATNDeserializer);
+
 ATNDeserializer::ATNDeserializer() : ATNDeserializer(ATNDeserializationOptions::getDefaultOptions()) {}
 
 ATNDeserializer::ATNDeserializer(ATNDeserializationOptions deserializationOptions) : _deserializationOptions(std::move(deserializationOptions)) {}

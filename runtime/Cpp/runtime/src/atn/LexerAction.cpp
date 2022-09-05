@@ -2,6 +2,8 @@
 
 using namespace antlr4::atn;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(LexerAction);
+
 size_t LexerAction::hashCode() const {
   auto hash = cachedHashCode();
   if (hash == 0) {

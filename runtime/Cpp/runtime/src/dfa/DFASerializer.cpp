@@ -10,6 +10,8 @@
 
 using namespace antlr4::dfa;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(DFASerializer);
+
 DFASerializer::DFASerializer(const DFA *dfa, const Vocabulary &vocabulary) : _dfa(dfa), _vocabulary(vocabulary) {
 }
 

@@ -18,6 +18,7 @@ namespace atn {
   /// Specialized set that can track info about the set, with support for combining similar configurations using a
   /// graph-structured stack.
   class ANTLR4CPP_PUBLIC ATNConfigSet {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     /// Track the elements as they are added to the set; supports get(i)
     std::vector<Ref<ATNConfig>> configs;

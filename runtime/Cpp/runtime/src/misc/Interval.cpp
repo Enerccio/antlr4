@@ -9,6 +9,8 @@ using namespace antlr4::misc;
 
 const Interval Interval::INVALID;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(Interval);
+
 size_t Interval::hashCode() const {
   size_t hash = 23;
   hash = hash * 31 + static_cast<size_t>(a);

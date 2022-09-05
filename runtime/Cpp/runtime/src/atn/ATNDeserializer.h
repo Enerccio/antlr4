@@ -14,6 +14,7 @@ namespace antlr4 {
 namespace atn {
 
   class ANTLR4CPP_PUBLIC ATNDeserializer final {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     static constexpr size_t SERIALIZED_VERSION = 4;
 

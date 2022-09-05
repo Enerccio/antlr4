@@ -11,6 +11,7 @@ namespace antlr4 {
 namespace atn {
 
 class ANTLR4CPP_PUBLIC ATNDeserializationOptions final {
+    ANTLR4CPP_ALLOCATION_DECLARATION
 public:
   ATNDeserializationOptions()
     : _readOnly(false), _verifyATN(true), _generateRuleBypassTransitions(false) {}

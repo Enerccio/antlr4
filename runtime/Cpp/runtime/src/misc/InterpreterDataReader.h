@@ -13,6 +13,8 @@ namespace antlr4 {
 namespace misc {
 
   struct InterpreterData {
+    ANTLR4CPP_ALLOCATION_DECLARATION_STRUCT
+
     std::unique_ptr<atn::ATN> atn;
     dfa::Vocabulary vocabulary;
     std::vector<std::string> ruleNames;
@@ -25,6 +27,7 @@ namespace misc {
 
   // A class to read plain text interpreter data produced by ANTLR.
   class ANTLR4CPP_PUBLIC InterpreterDataReader {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     static InterpreterData parseFile(std::string const& fileName);
   };

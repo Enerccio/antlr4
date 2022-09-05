@@ -26,6 +26,7 @@ namespace atn {
   /// @since 4.3
   /// </summary>
   class ANTLR4CPP_PUBLIC DecisionEventInfo {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     /// <summary>
     /// The invoked decision number which this event is related to.

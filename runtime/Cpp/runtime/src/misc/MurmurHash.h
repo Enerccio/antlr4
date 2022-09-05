@@ -14,6 +14,7 @@ namespace antlr4 {
 namespace misc {
 
   class ANTLR4CPP_PUBLIC MurmurHash final {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   private:
     static constexpr size_t DEFAULT_SEED = 0;
 

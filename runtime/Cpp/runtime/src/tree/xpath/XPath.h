@@ -54,6 +54,7 @@ namespace xpath {
   /// Whitespace is not allowed.</para>
 
   class ANTLR4CPP_PUBLIC XPath {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     static const std::string WILDCARD; // word not operator/separator
     static const std::string NOT; // word for invert operator

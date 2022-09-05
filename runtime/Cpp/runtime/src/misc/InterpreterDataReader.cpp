@@ -13,6 +13,8 @@ using namespace antlr4::dfa;
 using namespace antlr4::atn;
 using namespace antlr4::misc;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(InterpreterData);
+
 InterpreterData::InterpreterData(std::vector<std::string> const& literalNames, std::vector<std::string> const& symbolicNames)
 : vocabulary(literalNames, symbolicNames) {
 }

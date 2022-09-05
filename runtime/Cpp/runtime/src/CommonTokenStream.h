@@ -34,6 +34,7 @@ namespace antlr4 {
    * channel.</p>
    */
   class ANTLR4CPP_PUBLIC CommonTokenStream : public BufferedTokenStream {
+      ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     /**
      * Constructs a new {@link CommonTokenStream} using the specified token

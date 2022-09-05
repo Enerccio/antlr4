@@ -13,6 +13,8 @@
 using namespace antlr4::dfa;
 using namespace antlr4::atn;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(DFAState);
+
 std::string DFAState::PredPrediction::toString() const {
   return std::string("(") + pred->toString() + ", " + std::to_string(alt) + ")";
 }

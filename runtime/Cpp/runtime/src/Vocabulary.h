@@ -13,6 +13,7 @@ namespace dfa {
   /// This class provides a default implementation of the <seealso cref="Vocabulary"/>
   /// interface.
   class ANTLR4CPP_PUBLIC Vocabulary final {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
     /// Gets an empty <seealso cref="Vocabulary"/> instance.
     ///

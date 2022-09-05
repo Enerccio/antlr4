@@ -10,6 +10,7 @@
 namespace antlrcpp {
 
   class ANTLR4CPP_PUBLIC Arrays {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   public:
 
     static std::string listToString(const std::vector<std::string> &list, const std::string &separator);

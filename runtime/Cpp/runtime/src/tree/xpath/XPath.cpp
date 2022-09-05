@@ -22,6 +22,8 @@ using namespace antlr4::tree::xpath;
 const std::string XPath::WILDCARD = "*";
 const std::string XPath::NOT = "!";
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(XPath)
+
 XPath::XPath(Parser *parser, const std::string &path) {
   _parser = parser;
   _path = path;

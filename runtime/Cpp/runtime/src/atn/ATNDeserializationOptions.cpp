@@ -9,6 +9,8 @@
 using namespace antlr4;
 using namespace antlr4::atn;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(ATNDeserializationOptions);
+
 ATNDeserializationOptions::ATNDeserializationOptions(ATNDeserializationOptions *options)
     : _readOnly(false), _verifyATN(options->_verifyATN),
       _generateRuleBypassTransitions(options->_generateRuleBypassTransitions) {}

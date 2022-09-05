@@ -7,6 +7,8 @@
 
 using namespace antlr4;
 
+ANTLR4CPP_ALLOCATION_IMPLEMENTATION(IntStream)
+
 const std::string IntStream::UNKNOWN_SOURCE_NAME = "<unknown>";
 
 IntStream::~IntStream() = default;

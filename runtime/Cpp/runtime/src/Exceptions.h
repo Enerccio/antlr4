@@ -11,6 +11,7 @@ namespace antlr4 {
 
   // An exception hierarchy modelled loosely after java.lang.* exceptions.
   class ANTLR4CPP_PUBLIC RuntimeException : public std::exception {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   private:
     std::string _message;
   public:
@@ -71,6 +72,7 @@ namespace antlr4 {
   // IOException is not a runtime exception (in the java hierarchy).
   // Hence we have to duplicate the RuntimeException implementation.
   class ANTLR4CPP_PUBLIC IOException : public std::exception {
+    ANTLR4CPP_ALLOCATION_DECLARATION
   private:
     std::string _message;
 
